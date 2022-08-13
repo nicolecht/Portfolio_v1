@@ -17,6 +17,24 @@ a {
 
 .navbar {
   position: fixed;
-  display: flex;
+  width: 100%;
   background-color: #FFFFFF;
+}
+.navbar .max-width {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem 2rem;
+}
+.navbar .max-width .logo a {
+  color: #026670;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.navbar .max-width .menu li {
+  display: inline-block;
+  list-style: none;
+}
+.navbar .max-width .menu li a {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

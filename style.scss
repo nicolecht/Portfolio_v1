@@ -50,7 +50,31 @@ a {
 // Navbar styling 
 .navbar {
     position: fixed;
-    display: flex;
-    
+    width: 100%;
     background-color: $c-bg-primary;
+
+    .max-width {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1rem 2rem;
+      
+      
+      .logo a {
+        color: $c-tx-fourth;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      .menu li{
+        display: inline-block;
+        list-style: none;
+
+        a{
+          color: $c-tx-primary;
+        }
+      }
+    }
+
+    
 }

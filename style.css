@@ -1,0 +1,22 @@
+/* Import Google Fonts:
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

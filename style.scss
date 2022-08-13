@@ -74,7 +74,8 @@ a {
 
         span {
           font-size: 2rem;
-          //color: $c-tx-third;
+          color: $c-tx-third;
+          transition: all 0.3s ease;
         }
       }
 
@@ -99,6 +100,14 @@ a {
 .navbar.sticky {
   padding: 1rem 0;
   background-color: $c-bg-third;
+
+  .logo a span {
+    color: $c-tx-primary;
+  }
+
+  .menu li a:hover {
+    color: $c-bg-primary;
+  }
 }
 
 // Home Section styling

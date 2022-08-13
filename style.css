@@ -38,6 +38,8 @@ a {
 }
 .navbar .max-width .logo a span {
   font-size: 2rem;
+  color: #66FCF1;
+  transition: all 0.3s ease;
 }
 .navbar .max-width .menu li {
   display: inline-block;
@@ -56,6 +58,12 @@ a {
 .navbar.sticky {
   padding: 1rem 0;
   background-color: #45A29E;
+}
+.navbar.sticky .logo a span {
+  color: #FFFFFF;
+}
+.navbar.sticky .menu li a:hover {
+  color: #1F2833;
 }
 
 .home {

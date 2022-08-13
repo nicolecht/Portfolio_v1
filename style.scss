@@ -4,31 +4,31 @@ font-family: 'Ubuntu', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-// COLORS
-// Theme - 50 Lively Yet Soothing
-// Background Colors
-$c-bg-primary: #FFFFFF;
-$c-bg-secondary: #EDEAE5;
-$c-bg-third: #FEF9C7;
-$c-bg-fourth: #FCE181;
+// // COLORS
+// // Theme - 50 Lively Yet Soothing
+// // Background Colors
+// $c-bg-primary: #FFFFFF;
+// $c-bg-secondary: #EDEAE5;
+// $c-bg-third: #FEF9C7;
+// $c-bg-fourth: #FCE181;
 
-// Text Colors
-$c-tx-primary: #000000;
-$c-tx-secondary: #FFFFFF;
-$c-tx-third: #9FEDD7;
-$c-tx-fourth: #026670;
+// // Text Colors
+// $c-tx-primary: #000000;
+// $c-tx-secondary: #FFFFFF;
+// $c-tx-third: #9FEDD7;
+// $c-tx-fourth: #026670;
 
 // COLORS
 // Theme - 12 Striking and Simple
 // Background Colors
-// $c-bg-primary: #0B0C10;
-// $c-bg-secondary: #1F2833;
-// $c-bg-third: #45A29E;
+$c-bg-primary: #1F2833;
+$c-bg-secondary: #0B0C10;
+$c-bg-third: #45A29E;
 
-// // Text Colors
-// $c-tx-primary: #66FCF1;
-// $c-tx-secondary: #C5C6C7;
-// $c-tx-third: #FFFFFF;
+// Text Colors
+$c-tx-primary: #FFFFFF;
+$c-tx-secondary: #C5C6C7;
+$c-tx-third: #66FCF1;
 
 // CSS Properties ordered by type
 // Positioning > Display & Box Model > Color > Text > Other
@@ -39,7 +39,7 @@ $c-tx-fourth: #026670;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 // Default settings for all link elements
@@ -47,23 +47,35 @@ a {
     text-decoration: none;
 }
 
+// Default settings for max-width
+.max-width {
+  //max-width: 1300px;
+  padding: 0px 80px;
+  margin: auto;
+}
+
 // Navbar styling 
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: $c-bg-primary;
+    padding: 2rem 0;
+    //background-color: $c-bg-third;
+    transition: all 0.3s ease;
 
     .max-width {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
-      padding: 1rem 2rem;
-      
+      align-items: center;
       
       .logo a {
-        color: $c-tx-fourth;
+        color: $c-tx-primary;
         font-size: 2rem;
         font-weight: 600;
+
+        span {
+          font-size: 2rem;
+          //color: $c-tx-third;
+        }
       }
 
       .menu li{
@@ -72,9 +84,61 @@ a {
 
         a{
           color: $c-tx-primary;
+          font-weight: 500;
+          margin-left: 1.5rem;
+          transition: color 0.3s ease;
+        }
+
+        a:hover {
+          color: $c-tx-third;
         }
       }
     }
+}
 
-    
+.navbar.sticky {
+  padding: 1rem 0;
+  background-color: $c-bg-third;
+}
+
+// Home Section styling
+.home {
+  display: flex;
+  //background: url("./img/homeBanner.png") no-repeat center;
+  //background-size: cover;
+  //background-attachment: fixed;
+  background-color: $c-bg-primary;
+  height: 100vh;
+  min-height: 100px;
+  color: $c-tx-primary;
+
+  .max-width {
+    margin: auto 0 auto 1rem;
+
+    .home-content {
+
+      .text-1 {
+        font-size: 2rem;
+      }
+
+      .text-2 {
+        font-size: 4rem;
+        //font-weight: 600;
+        margin-left: -3px;
+      }
+
+      .text-3 {
+        font-size: 3rem;
+        margin: 5px 0;
+
+        span {
+          color: $c-tx-third;
+          font-weight: 500;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  
 }

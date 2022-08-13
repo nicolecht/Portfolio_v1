@@ -8,33 +8,79 @@ font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+.max-width {
+  padding: 0px 80px;
+  margin: auto;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: #FFFFFF;
+  padding: 2rem 0;
+  transition: all 0.3s ease;
 }
 .navbar .max-width {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 1rem 2rem;
+  align-items: center;
 }
 .navbar .max-width .logo a {
-  color: #026670;
+  color: #FFFFFF;
   font-size: 2rem;
   font-weight: 600;
+}
+.navbar .max-width .logo a span {
+  font-size: 2rem;
 }
 .navbar .max-width .menu li {
   display: inline-block;
   list-style: none;
 }
 .navbar .max-width .menu li a {
-  color: #000000;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+.navbar .max-width .menu li a:hover {
+  color: #66FCF1;
+}
+
+.navbar.sticky {
+  padding: 1rem 0;
+  background-color: #45A29E;
+}
+
+.home {
+  display: flex;
+  background-color: #1F2833;
+  height: 100vh;
+  min-height: 100px;
+  color: #FFFFFF;
+}
+.home .max-width {
+  margin: auto 0 auto 1rem;
+}
+.home .max-width .home-content .text-1 {
+  font-size: 2rem;
+}
+.home .max-width .home-content .text-2 {
+  font-size: 4rem;
+  margin-left: -3px;
+}
+.home .max-width .home-content .text-3 {
+  font-size: 3rem;
+  margin: 5px 0;
+}
+.home .max-width .home-content .text-3 span {
+  color: #66FCF1;
+  font-weight: 500;
+  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

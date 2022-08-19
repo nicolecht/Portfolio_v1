@@ -98,9 +98,6 @@ a {
     display: block;
     z-index: 999;
   }
-  .navbar .max-width .menu-btn i.active:before {
-    content: "\f00d";
-  }
 }
 
 .navbar.sticky {

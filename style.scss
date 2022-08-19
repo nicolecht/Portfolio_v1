@@ -1,22 +1,11 @@
+// Separate stylesheet for media quaries
+@use 'media-query';
+
 /* Import Google Fonts:
 font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
-// // COLORS
-// // Theme - 50 Lively Yet Soothing
-// // Background Colors
-// $c-bg-primary: #FFFFFF;
-// $c-bg-secondary: #EDEAE5;
-// $c-bg-third: #FEF9C7;
-// $c-bg-fourth: #FCE181;
-
-// // Text Colors
-// $c-tx-primary: #000000;
-// $c-tx-secondary: #FFFFFF;
-// $c-tx-third: #9FEDD7;
-// $c-tx-fourth: #026670;
 
 // COLORS
 // Theme - 12 Striking and Simple
@@ -29,6 +18,20 @@ $c-bg-third: #45A29E;
 $c-tx-primary: #FFFFFF;
 $c-tx-secondary: #C5C6C7;
 $c-tx-third: #66FCF1;
+
+// // COLORS OPTION 2
+// // Theme - 50 Lively Yet Soothing
+// // Background Colors
+// $c-bg-primary: #FFFFFF;
+// $c-bg-secondary: #EDEAE5;
+// $c-bg-third: #FEF9C7;
+// $c-bg-fourth: #FCE181;
+
+// // Text Colors
+// $c-tx-primary: #000000;
+// $c-tx-secondary: #FFFFFF;
+// $c-tx-third: #9FEDD7;
+// $c-tx-fourth: #026670;
 
 // CSS Properties ordered by type
 // Positioning > Display & Box Model > Color > Text > Other
@@ -52,55 +55,86 @@ a {
   //max-width: 1300px;
   padding: 0px 80px;
   margin: auto;
+
+  @include media-query.xs {
+    padding: 0px 50px;
+  }
 }
 
 // Navbar styling 
 .navbar {
-    position: fixed;
-    width: 100%;
-    padding: 2rem 0;
-    //background-color: $c-bg-third;
-    transition: all 0.3s ease;
+  position: fixed;
+  width: 100%;
+  padding: 2rem 0;
+  //background-color: $c-bg-third;
+  transition: all 0.3s ease;
 
-    .max-width {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      
-      .logo a {
-        color: $c-tx-primary;
+  .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo a {
+      color: $c-tx-primary;
+      font-size: 2rem;
+      font-weight: 600;
+
+      span {
         font-size: 2rem;
-        font-weight: 600;
+        color: $c-tx-third;
+        transition: all 0.3s ease;
+      }
+    }
 
-        span {
-          font-size: 2rem;
-          color: $c-tx-third;
-          transition: all 0.3s ease;
-        }
+    .menu {
+      @include media-query.lt-md {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        padding: 80px 0 0 0;
+        background-color: $c-bg-primary;
+        text-align: center;
       }
 
-      .menu li{
+      li {
         display: inline-block;
         list-style: none;
+        @include media-query.lt-md {
+          display: block;
+        }
 
-        a{
+        a {
           color: $c-tx-primary;
           font-weight: 500;
           margin-left: 1.5rem;
           transition: color 0.3s ease;
+
+          @include media-query.lt-md {
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 1.5rem;
+          }
         }
 
         a:hover {
           color: $c-tx-third;
         }
       }
+    }
 
-      .menu-btn {
-        color: $c-tx-third;
-        //font-size: 23px;
-        cursor: pointer;
+    .menu-btn {
+      display: none;
+      color: $c-tx-third;
+      //font-size: 23px;
+      cursor: pointer;
+      @include media-query.lt-md {
+        display: block;
+        z-index: 999;
       }
     }
+  }
 }
 
 .navbar.sticky {
@@ -153,7 +187,6 @@ a {
         }
       }
     }
-  }
-
-  
+  }  
 }
+

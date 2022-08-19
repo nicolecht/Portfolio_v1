@@ -19,6 +19,11 @@ a {
   padding: 0px 80px;
   margin: auto;
 }
+@media screen and (max-width: 599px) {
+  .max-width {
+    padding: 0px 50px;
+  }
+}
 
 .navbar {
   position: fixed;
@@ -41,9 +46,26 @@ a {
   color: #66FCF1;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 959px) {
+  .navbar .max-width .menu {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 80px 0 0 0;
+    background-color: #1F2833;
+    text-align: center;
+  }
+}
 .navbar .max-width .menu li {
   display: inline-block;
   list-style: none;
+}
+@media screen and (max-width: 959px) {
+  .navbar .max-width .menu li {
+    display: block;
+  }
 }
 .navbar .max-width .menu li a {
   color: #FFFFFF;
@@ -51,12 +73,26 @@ a {
   margin-left: 1.5rem;
   transition: color 0.3s ease;
 }
+@media screen and (max-width: 959px) {
+  .navbar .max-width .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+}
 .navbar .max-width .menu li a:hover {
   color: #66FCF1;
 }
 .navbar .max-width .menu-btn {
+  display: none;
   color: #66FCF1;
   cursor: pointer;
+}
+@media screen and (max-width: 959px) {
+  .navbar .max-width .menu-btn {
+    display: block;
+    z-index: 999;
+  }
 }
 
 .navbar.sticky {

@@ -54,6 +54,10 @@ a {
 .navbar .max-width .menu li a:hover {
   color: #66FCF1;
 }
+.navbar .max-width .menu-btn {
+  color: #66FCF1;
+  cursor: pointer;
+}
 
 .navbar.sticky {
   padding: 1rem 0;

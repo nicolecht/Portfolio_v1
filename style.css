@@ -19,7 +19,7 @@ a {
   padding: 0px 80px;
   margin: auto;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 959px) {
   .max-width {
     padding: 0px 50px;
   }
@@ -121,6 +121,11 @@ a {
 .home .max-width {
   margin: auto 0 auto 1rem;
 }
+@media screen and (max-width: 959px) {
+  .home .max-width {
+    margin: auto 0;
+  }
+}
 .home .max-width .home-content .text-1 {
   font-size: 2rem;
 }
@@ -128,12 +133,48 @@ a {
   font-size: 4rem;
   margin-left: -3px;
 }
+@media screen and (max-width: 959px) {
+  .home .max-width .home-content .text-2 {
+    font-size: 3.5rem;
+  }
+}
 .home .max-width .home-content .text-3 {
   font-size: 3rem;
   margin: 5px 0;
+}
+@media screen and (max-width: 959px) {
+  .home .max-width .home-content .text-3 {
+    font-size: 2.5rem;
+  }
 }
 .home .max-width .home-content .text-3 span {
   color: #66FCF1;
   font-weight: 500;
   font-size: 3rem;
+}
+@media screen and (max-width: 959px) {
+  .home .max-width .home-content .text-3 span {
+    font-size: 2.5rem;
+  }
+}
+.home .max-width .home-content a {
+  display: inline-block;
+  margin: 1rem 0 0 0;
+  padding: 1rem 2rem;
+  border: 2px solid #45A29E;
+  border-radius: 0.5rem;
+  background-color: #45A29E;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 959px) {
+  .home .max-width .home-content a {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+.home .max-width .home-content a:hover {
+  background: none;
+  color: #66FCF1;
 }/*# sourceMappingURL=style.css.map */

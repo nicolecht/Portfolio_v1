@@ -1,4 +1,4 @@
-// Configure navbar appearance on scroll 
+// Configure navbar appearance on scroll using jQuery
 $(document).ready(function() {
     $(window).scroll(function() {
         if (this.scrollY > 20) {
@@ -12,7 +12,7 @@ $(document).ready(function() {
     // Toggle menu/navbar for mobile
     $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
-        //$('.menu-btn i').toggleClass("active");
+        // $('.menu-btn i').toggleClass("active");
     });
 });
 

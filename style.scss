@@ -56,7 +56,7 @@ a {
   padding: 0px 80px;
   margin: auto;
 
-  @include media-query.xs {
+  @include media-query.lt-md {
     padding: 0px 50px;
   }
 }
@@ -172,6 +172,9 @@ a {
 
   .max-width {
     margin: auto 0 auto 1rem;
+    @include media-query.lt-md {
+      margin: auto 0;
+    }
 
     .home-content {
 
@@ -183,17 +186,46 @@ a {
         font-size: 4rem;
         //font-weight: 600;
         margin-left: -3px;
+        @include media-query.lt-md {
+          font-size: 3.5rem;
+        }
       }
 
       .text-3 {
         font-size: 3rem;
         margin: 5px 0;
+        @include media-query.lt-md {
+          font-size: 2.5rem;
+        }
 
         span {
           color: $c-tx-third;
           font-weight: 500;
           font-size: 3rem;
+          @include media-query.lt-md {
+            font-size: 2.5rem;
+          }
         }
+      }
+
+      a {
+        display: inline-block;
+        margin: 1rem 0 0 0;
+        padding: 1rem 2rem;
+        border: 2px solid $c-bg-third;
+        border-radius: 0.5rem;
+        background-color: $c-bg-third;
+        color: $c-tx-primary;
+        font-size: 1.8rem;
+        transition: all 0.3s ease;
+        @include media-query.lt-md {
+          padding: 0.8rem 1.5rem;
+          font-size: 1.5rem;
+        }
+      }
+      a:hover {
+        background: none;
+        color: $c-tx-third;
       }
     }
   }  

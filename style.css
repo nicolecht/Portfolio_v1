@@ -183,11 +183,7 @@ a {
 section {
   padding: 100px 0;
 }
-
-.about .max-width {
-  max-width: 1300px;
-}
-.about .title {
+section .title {
   position: relative;
   margin-bottom: 5rem;
   padding-bottom: 1rem;
@@ -195,7 +191,7 @@ section {
   font-weight: 500;
   text-align: center;
 }
-.about .title::before {
+section .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -205,7 +201,7 @@ section {
   background-color: #0B0C10;
   transform: translateX(-50%);
 }
-.about .title::after {
+section .title::after {
   content: "who i am";
   position: absolute;
   bottom: -12px;
@@ -215,6 +211,13 @@ section {
   background-color: #FFFFFF;
   font-size: 1rem;
   transform: translateX(-50%);
+}
+
+.about .max-width {
+  max-width: 1300px;
+}
+.about .title::after {
+  content: "who i am";
 }
 .about .about-content {
   display: flex;
@@ -287,4 +290,8 @@ section {
 .about .about-content .right a:hover {
   background: none;
   color: #45A29E;
+}
+
+.services .title::after {
+  content: "what i provide";
 }/*# sourceMappingURL=style.css.map */

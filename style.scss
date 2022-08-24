@@ -232,17 +232,10 @@ a {
   }  
 }
 
-// About section styling
+// Default content section styling
 section {
   padding: 100px 0;
   //background-color: green;
-}
-
-.about {
-  .max-width {
-    max-width: 1300px;
-  }
-  
   .title {
     position: relative;
     margin-bottom: 5rem;
@@ -273,6 +266,18 @@ section {
     background-color: $c-tx-primary;
     font-size: 1rem;
     transform: translateX(-50%);
+  }
+}
+
+// About section styling
+
+.about {
+  .max-width {
+    max-width: 1300px;
+  }
+
+  .title::after {
+    content: "who i am";
   }
 
   .about-content {
@@ -348,5 +353,13 @@ section {
         color: $c-bg-third;
       }
     }
+  }
+}
+
+// Services section styling
+
+.services {
+  .title::after {
+    content: "what i provide";
   }
 }

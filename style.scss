@@ -140,9 +140,9 @@ a {
         display: block;
         z-index: 999;
 
-        //i.active:before {
+        // i.active:before {
         //  content: "\f00d";
-        //}
+        // }
       }
     }
   }
@@ -359,7 +359,43 @@ section {
 // Services section styling
 
 .services {
+  color: $c-tx-primary;
+  background-color: $c-bg-primary;
+
+  .title::before {
+    background-color: $c-tx-primary; 
+  }
+
   .title::after {
     content: "what i provide";
+    color: $c-tx-third;
+    background-color: $c-bg-primary;
+  }
+
+  .serv-content {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      width: calc(33% - 20px);
+      padding: 2rem 1rem;
+      border-radius: 6px;
+      background-color: $c-bg-secondary;
+      text-align: center;
+      cursor: pointer;
+
+      .box {
+        .text {
+          margin: 10px 0;
+          color: $c-tx-third;
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .card:hover {
+      background-color: $c-bg-third;
+    }
   }
 }

@@ -99,6 +99,9 @@ a {
     display: block;
     z-index: 999;
   }
+  .navbar .max-width .menu-btn i.active:before {
+    content: "\f00d";
+  }
 }
 
 .navbar.sticky {
@@ -292,6 +295,36 @@ section .title::after {
   color: #45A29E;
 }
 
+.services {
+  color: #FFFFFF;
+  background-color: #1F2833;
+}
+.services .title::before {
+  background-color: #FFFFFF;
+}
 .services .title::after {
   content: "what i provide";
+  color: #66FCF1;
+  background-color: #1F2833;
+}
+.services .serv-content {
+  display: flex;
+  justify-content: space-between;
+}
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  padding: 2rem 1rem;
+  border-radius: 6px;
+  background-color: #0B0C10;
+  text-align: center;
+  cursor: pointer;
+}
+.services .serv-content .card .box .text {
+  margin: 10px 0;
+  color: #66FCF1;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.services .serv-content .card:hover {
+  background-color: #45A29E;
 }/*# sourceMappingURL=style.css.map */

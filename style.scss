@@ -383,19 +383,28 @@ section {
       background-color: $c-bg-secondary;
       text-align: center;
       cursor: pointer;
+      transition: all 0.3s ease;
+      @include media-query.lt-md {
+      }
 
       .box {
         .text {
-          margin: 10px 0;
+          margin: 10px 0 20px 0;
           color: $c-tx-third;
           font-size: 1.5rem;
           font-weight: 500;
+          transition: color 0.3s ease;
         }
       }
     }
 
     .card:hover {
-      background-color: $c-bg-third;
+      background-color: darken($c-bg-third, 15%);
+      transform: scale(1.05);
+
+      .text {
+        color: $c-tx-primary;
+      }
     }
   }
 }

@@ -99,9 +99,6 @@ a {
     display: block;
     z-index: 999;
   }
-  .navbar .max-width .menu-btn i.active:before {
-    content: "\f00d";
-  }
 }
 
 .navbar.sticky {
@@ -318,13 +315,19 @@ section .title::after {
   background-color: #0B0C10;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .services .serv-content .card .box .text {
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
   color: #66FCF1;
   font-size: 1.5rem;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 .services .serv-content .card:hover {
-  background-color: #45A29E;
+  background-color: #2e6c6a;
+  transform: scale(1.05);
+}
+.services .serv-content .card:hover .text {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

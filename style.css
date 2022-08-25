@@ -341,4 +341,18 @@ section .title::after {
 }
 .services .serv-content .card:hover .text {
   color: #FFFFFF;
+}
+
+.skills .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background-color: #0B0C10;
+  transform: translateX(-50%);
+}
+.skills .title::after {
+  content: "Languages & Frameworks";
 }/*# sourceMappingURL=style.css.map */

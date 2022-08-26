@@ -1,0 +1,25 @@
+// Reusable components
+
+// COLORS
+// Theme - 12 Striking and Simple
+// Background Colors
+$c-bg-primary: #1F2833;
+$c-bg-secondary: #0B0C10;
+$c-bg-third: #45A29E;
+
+// Text Colors
+$c-tx-primary: #FFFFFF;
+$c-tx-secondary: #C5C6C7;
+$c-tx-third: #66FCF1;
+
+@mixin button($padding, $font-size, $font-weight) {
+    display: inline-block;
+    padding: $padding;
+    border: 2px solid $c-bg-third;
+    border-radius: 0.5rem;
+    background-color: $c-bg-third;
+    color: $c-tx-primary;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    transition: all 0.3s ease;
+}

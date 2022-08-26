@@ -1,5 +1,8 @@
-// Separate stylesheet for media quaries
+// Stylesheet for media quaries
 @use 'media-query';
+
+// Stylesheet for reusable components
+@use 'components';
 
 /* Import Google Fonts:
 font-family: 'Poppins', sans-serif;
@@ -157,7 +160,7 @@ a {
   }
 
   .menu li a:hover {
-    color: $c-bg-primary;
+    color: $c-tx-third;
   }
 }
 
@@ -191,7 +194,7 @@ a {
 
       .text-3 {
         font-size: 3rem;
-        margin: 5px 0;
+        margin: 5px 0 16px 0;
         @include media-query.lt-md {
           font-size: 2.5rem;
         }
@@ -207,15 +210,7 @@ a {
       }
 
       a {
-        display: inline-block;
-        margin: 1rem 0 0 0;
-        padding: 1rem 2rem;
-        border: 2px solid $c-bg-third;
-        border-radius: 0.5rem;
-        background-color: $c-bg-third;
-        color: $c-tx-primary;
-        font-size: 1.8rem;
-        transition: all 0.3s ease;
+        @include components.button (1rem 2rem, 1.8rem, 0);
         @include media-query.lt-md {
           padding: 0.8rem 1.5rem;
           font-size: 1.5rem;
@@ -326,15 +321,7 @@ section {
       }
 
       a {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        border: 2px solid $c-bg-third;
-        border-radius: 0.5rem;
-        background-color: $c-bg-third;
-        color: $c-tx-primary;
-        font-size: 1rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
+        @include components.button (0.8rem 1.5rem, 1rem, 500);
         @include media-query.lt-md {
           padding: 0.5rem 1rem;
           font-size: 1rem;
@@ -421,10 +408,17 @@ section {
     justify-content: space-between;
 
     .column {
-      width: calc(50% - 30px);
+      width: calc(50% - 40px);
+      @include media-query.lt-md {
+        width: 100%;
+      }
     }
 
     .left {
+      @include media-query.lt-md {
+        margin-bottom: 2rem;
+      }
+
       .text {
         color: $c-bg-third;
         font-size: 1.2rem;
@@ -437,15 +431,7 @@ section {
       }
 
       a {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        border: 2px solid $c-bg-third;
-        border-radius: 0.5rem;
-        background-color: $c-bg-third;
-        color: $c-tx-primary;
-        font-size: 1rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
+        @include components.button (0.5rem 1rem, 1rem, 500);
         @include media-query.lt-md {
           padding: 0.5rem 1rem;
           font-size: 1rem;
@@ -455,6 +441,59 @@ section {
       a:hover {
         background: none;
         color: $c-bg-third;
+      }
+    }
+
+    .right {
+      .bars {
+        margin-bottom: 1rem;
+
+        .info {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+          align-items: center;
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        .line {
+          position: relative;
+          height: 5px;
+          width: 100%;
+          background-color: $c-tx-secondary;
+        }
+
+        .line::before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: $c-bg-third;
+        }
+
+        .html::before {
+          width:70%;
+        }
+
+        .css::before {
+          width:60%;
+        }
+
+        .react::before {
+          width:10%;
+        }
+
+        .js::before {
+          width:50%;
+        }
+
+        .c::before {
+          width:60%;
+        }
       }
     }
   }

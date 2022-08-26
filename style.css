@@ -110,7 +110,7 @@ a {
   color: #FFFFFF;
 }
 .navbar.sticky .menu li a:hover {
-  color: #1F2833;
+  color: #66FCF1;
 }
 
 .home {
@@ -137,7 +137,7 @@ a {
 }
 .home .max-width .home-content .text-3 {
   font-size: 3rem;
-  margin: 5px 0;
+  margin: 5px 0 16px 0;
 }
 @media screen and (max-width: 959px) {
   .home .max-width .home-content .text-3 {
@@ -156,13 +156,13 @@ a {
 }
 .home .max-width .home-content a {
   display: inline-block;
-  margin: 1rem 0 0 0;
   padding: 1rem 2rem;
   border: 2px solid #45A29E;
   border-radius: 0.5rem;
   background-color: #45A29E;
   color: #FFFFFF;
   font-size: 1.8rem;
+  font-weight: 0;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 959px) {
@@ -345,7 +345,17 @@ section .title::after {
   justify-content: space-between;
 }
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  width: calc(50% - 40px);
+}
+@media screen and (max-width: 959px) {
+  .skills .skills-content .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .skills .skills-content .left {
+    margin-bottom: 2rem;
+  }
 }
 .skills .skills-content .left .text {
   color: #45A29E;
@@ -358,7 +368,7 @@ section .title::after {
 }
 .skills .skills-content .left a {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1rem;
   border: 2px solid #45A29E;
   border-radius: 0.5rem;
   background-color: #45A29E;
@@ -376,4 +386,45 @@ section .title::after {
 .skills .skills-content .left a:hover {
   background: none;
   color: #45A29E;
+}
+.skills .skills-content .right .bars {
+  margin-bottom: 1rem;
+}
+.skills .skills-content .right .bars .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  align-items: center;
+}
+.skills .skills-content .right .bars .info span {
+  font-weight: 500;
+}
+.skills .skills-content .right .bars .line {
+  position: relative;
+  height: 5px;
+  width: 100%;
+  background-color: #C5C6C7;
+}
+.skills .skills-content .right .bars .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #45A29E;
+}
+.skills .skills-content .right .bars .html::before {
+  width: 70%;
+}
+.skills .skills-content .right .bars .css::before {
+  width: 60%;
+}
+.skills .skills-content .right .bars .react::before {
+  width: 10%;
+}
+.skills .skills-content .right .bars .js::before {
+  width: 50%;
+}
+.skills .skills-content .right .bars .c::before {
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */

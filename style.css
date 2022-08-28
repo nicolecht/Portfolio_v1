@@ -427,4 +427,40 @@ section .title::after {
 }
 .skills .skills-content .right .bars .c::before {
   width: 60%;
+}
+
+.projects {
+  color: #FFFFFF;
+  background-color: #1F2833;
+}
+.projects .title::before {
+  background-color: #FFFFFF;
+}
+.projects .title::after {
+  content: "what I've built";
+  color: #66FCF1;
+  background-color: #1F2833;
+}
+.projects .carousel {
+  display: flex;
+}
+.projects .carousel .card {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #0B0C10;
+}
+.projects .carousel .card .box {
+  text-align: center;
+}
+.projects .carousel .card .box img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #45A29E;
+}
+.projects .carousel .card:hover {
+  background-color: #2e6c6a;
 }/*# sourceMappingURL=style.css.map */

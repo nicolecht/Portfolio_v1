@@ -498,3 +498,50 @@ section {
     }
   }
 }
+
+// Teams section styling
+
+.projects {
+  color: $c-tx-primary;
+  background-color: $c-bg-primary;
+
+  .title::before {
+    background-color: $c-tx-primary; 
+  }
+
+	.title::after {
+	  content: "what I've built";
+    color: $c-tx-third;
+    background-color: $c-bg-primary;
+	}
+
+  .carousel {
+    display: flex; //
+
+    .card {
+      margin: 0 5px; //
+      padding: 10px;
+      border-radius: 10px;
+      background-color: $c-bg-secondary;
+
+      .box {
+        text-align: center; //
+
+        img {
+          height: 100px;
+          width: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 5px solid $c-bg-third;
+        }
+
+        text {
+        }
+      }
+    }
+
+    .card:hover {
+      background-color: darken($c-bg-third, 15%);
+    }
+  }
+}

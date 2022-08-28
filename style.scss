@@ -541,7 +541,7 @@ section {
     }
 
     .card:hover {
-      background-color: darken($c-bg-third, 15%);
+      background-color: darken($c-bg-third, 15%); //
     }
   }
 }

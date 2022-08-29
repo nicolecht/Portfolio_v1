@@ -1,5 +1,6 @@
-// Configure navbar appearance on scroll using jQuery
+// jQuery
 $(document).ready(function() {
+    // Configure navbar appearance on scroll
     $(window).scroll(function() {
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");

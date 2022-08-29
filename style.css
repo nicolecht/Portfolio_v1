@@ -209,14 +209,17 @@ section .title::after {
   transform: translateX(-50%);
 }
 
-.about .title::after {
-  content: "who i am";
-}
-.about .about-content {
+.about-content,
+.skills-content,
+.contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.about .title::after {
+  content: "who i am";
 }
 @media screen and (max-width: 959px) {
   .about .about-content .column {
@@ -338,12 +341,6 @@ section .title::after {
 .skills .title::after {
   content: "Languages & Tools";
 }
-.skills .skills-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 .skills .skills-content .column {
   width: calc(50% - 40px);
 }
@@ -442,7 +439,7 @@ section .title::after {
   background-color: #1F2833;
 }
 .projects .carousel .card {
-  padding: 20px 10px;
+  padding: 20px 20px;
   border-radius: 10px;
   background-color: #0B0C10;
   text-align: center;
@@ -453,6 +450,7 @@ section .title::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 .projects .carousel .card .box img {
   height: 100px;
@@ -470,8 +468,46 @@ section .title::after {
 }
 .projects .carousel .card:hover {
   background-color: #45a29e;
+}
+.projects .carousel .card:hover .box {
   transform: scale(1.05);
 }
 .projects .carousel .card:hover img {
   border-color: #FFFFFF;
+}
+.projects .owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.projects .owl-carousel .owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #45A29E !important;
+  transition: all 0.3s ease;
+}
+.projects .owl-carousel .owl-dot:hover {
+  background-color: #45A29E;
+}
+.projects .owl-carousel .owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.contact .title::after {
+  content: "let's connect";
+}
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+  background-color: green;
+}
+.contact .contact-content .left .text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.contact .contact-content .left p {
+  margin: 1rem 0;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */

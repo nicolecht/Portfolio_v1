@@ -328,7 +328,7 @@ section .title::after {
   transition: color 0.3s ease;
 }
 .services .serv-content .card:hover {
-  background-color: #2e6c6a;
+  background-color: #45a29e;
   transform: scale(1.05);
 }
 .services .serv-content .card:hover .text {
@@ -441,17 +441,18 @@ section .title::after {
   color: #66FCF1;
   background-color: #1F2833;
 }
-.projects .carousel {
-  display: flex;
-}
 .projects .carousel .card {
-  margin: 0 5px;
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 10px;
   background-color: #0B0C10;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 .projects .carousel .card .box {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .projects .carousel .card .box img {
   height: 100px;
@@ -459,8 +460,18 @@ section .title::after {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #45A29E;
+  border: 5px solid #66FCF1;
+  transition: border-color 0.3s ease;
+}
+.projects .carousel .card .box .text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
 }
 .projects .carousel .card:hover {
-  background-color: #2e6c6a;
+  background-color: #45a29e;
+  transform: scale(1.05);
+}
+.projects .carousel .card:hover img {
+  border-color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

@@ -384,7 +384,7 @@ section {
     }
 
     .card:hover {
-      background-color: darken($c-bg-third, 15%);
+      background-color: darken($c-bg-third, 0%);
       transform: scale(1.05);
 
       .text {
@@ -516,32 +516,44 @@ section {
 	}
 
   .carousel {
-    display: flex; //
 
     .card {
-      margin: 0 5px; //
-      padding: 10px;
+      padding: 20px 10px;
       border-radius: 10px;
       background-color: $c-bg-secondary;
+      text-align: center;
+      transition: all 0.3s ease;
 
       .box {
-        text-align: center; //
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         img {
           height: 100px;
           width: 100px;
           object-fit: cover;
           border-radius: 50%;
-          border: 5px solid $c-bg-third;
+          border: 5px solid $c-tx-third;
+          transition: border-color 0.3s ease;
         }
 
-        text {
+        .text {
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin: 10px 0;
         }
       }
     }
 
     .card:hover {
-      background-color: darken($c-bg-third, 15%); //
+      background-color: darken($c-bg-third, 0%);
+      transform: scale(1.05);
+
+      img {
+        border-color: $c-tx-primary;
+      }
     }
   }
 }

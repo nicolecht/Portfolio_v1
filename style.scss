@@ -597,10 +597,15 @@ section {
   .contact-content {
     .column {
       width: calc(50% - 30px);
-      //background-color: green;
+      @include media-query.lt-md {
+        width: 100%;
+      }
     }
 
     .left {
+      @include media-query.lt-md {
+        margin-bottom: 1rem;
+      }
       .text {
         font-size: 1.5rem;
         font-weight: 500;
@@ -635,19 +640,64 @@ section {
 
     .right {
 
+      .text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        background-color: green;
+        margin-bottom: 100px; //
+      }
+
       form {
 
         .fields {
           display: flex;
+
+          .name {
+            margin-right: 10px;
+          }
+
+          .email {
+            margin-left: 10px;
+          }
         }
 
         .field {
           height: 45px;
           width: 100%;
+          margin-bottom: 1rem;
+        }
 
-          input {
-            height: 100%;
-            width: 100%;
+        .textarea {
+          height: 80px;
+        }
+
+        input,
+        textarea {
+          height: 100%;
+          width: 100%;
+          padding: 0 15px;
+          border: 1px solid $c-tx-secondary;
+          border-radius: 6px;
+          outline: none;
+        }
+
+        textarea {
+          padding-top: 10px;
+          resize: none;
+        }
+
+        .button {
+          height: 47px;
+          width: 100%;
+
+          button {
+            @include components.button (0.5rem 1rem, 1rem, 500);
+            cursor: pointer;
+          }
+
+          button:hover {
+            color: $c-bg-third;
+            background: none;
           }
         }
       }

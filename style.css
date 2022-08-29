@@ -502,6 +502,16 @@ section .title::after {
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
+@media screen and (max-width: 959px) {
+  .contact .contact-content .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .contact .contact-content .left {
+    margin-bottom: 1rem;
+  }
+}
 .contact .contact-content .left .text {
   font-size: 1.5rem;
   font-weight: 500;
@@ -524,14 +534,59 @@ section .title::after {
 .contact .contact-content .left .icons .row .info .head {
   font-weight: 500;
 }
+.contact .contact-content .right .text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: green;
+  margin-bottom: 100px;
+}
 .contact .contact-content .right form .fields {
   display: flex;
+}
+.contact .contact-content .right form .fields .name {
+  margin-right: 10px;
+}
+.contact .contact-content .right form .fields .email {
+  margin-left: 10px;
 }
 .contact .contact-content .right form .field {
   height: 45px;
   width: 100%;
+  margin-bottom: 1rem;
 }
-.contact .contact-content .right form .field input {
+.contact .contact-content .right form .textarea {
+  height: 80px;
+}
+.contact .contact-content .right form input,
+.contact .contact-content .right form textarea {
   height: 100%;
   width: 100%;
+  padding: 0 15px;
+  border: 1px solid #C5C6C7;
+  border-radius: 6px;
+  outline: none;
+}
+.contact .contact-content .right form textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .contact-content .right form .button {
+  height: 47px;
+  width: 100%;
+}
+.contact .contact-content .right form .button button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #45A29E;
+  border-radius: 0.5rem;
+  background-color: #45A29E;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.contact .contact-content .right form .button button:hover {
+  color: #45A29E;
+  background: none;
 }/*# sourceMappingURL=style.css.map */

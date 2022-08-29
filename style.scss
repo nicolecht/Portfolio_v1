@@ -274,7 +274,7 @@ section {
 
 .about {
   .title::after {
-    content: "who i am";
+    content: "my background";
   }
 
   .about-content {
@@ -351,7 +351,7 @@ section {
   }
 
   .title::after {
-    content: "what i provide";
+    content: "what I provide";
     color: $c-tx-third;
     background-color: $c-bg-primary;
   }
@@ -567,9 +567,9 @@ section {
     }
 
     .owl-dot {
-      height: 13px;
-      width: 13px;
-      margin: 0 5px;
+      height: 0.8rem;
+      width: 0.8rem;
+      margin: 0 0.3rem;
       outline: none!important;
       border-radius: 50%;
       border: 2px solid $c-bg-third!important;
@@ -597,7 +597,7 @@ section {
   .contact-content {
     .column {
       width: calc(50% - 30px);
-      background-color: green;
+      //background-color: green;
     }
 
     .left {
@@ -609,6 +609,47 @@ section {
       p {
         margin: 1rem 0;
         text-align: justify;
+      }
+
+      .icons {
+
+        .row {
+          display: flex;
+          height: 4rem;
+          align-items: center;
+
+          i {
+            font-size: 100px;
+          }
+
+          .info {
+            margin-left: 1.5rem;
+
+            .head {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+
+      form {
+
+        .fields {
+          display: flex;
+        }
+
+        .field {
+          height: 45px;
+          width: 100%;
+
+          input {
+            height: 100%;
+            width: 100%;
+          }
+        }
       }
     }
   }

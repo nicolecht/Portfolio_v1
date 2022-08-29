@@ -219,7 +219,7 @@ section .title::after {
 }
 
 .about .title::after {
-  content: "who i am";
+  content: "my background";
 }
 @media screen and (max-width: 959px) {
   .about .about-content .column {
@@ -295,7 +295,7 @@ section .title::after {
   background-color: #FFFFFF;
 }
 .services .title::after {
-  content: "what i provide";
+  content: "what I provide";
   color: #66FCF1;
   background-color: #1F2833;
 }
@@ -480,9 +480,9 @@ section .title::after {
   margin-top: 20px;
 }
 .projects .owl-carousel .owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 0.3rem;
   outline: none !important;
   border-radius: 50%;
   border: 2px solid #45A29E !important;
@@ -501,7 +501,6 @@ section .title::after {
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
-  background-color: green;
 }
 .contact .contact-content .left .text {
   font-size: 1.5rem;
@@ -510,4 +509,29 @@ section .title::after {
 .contact .contact-content .left p {
   margin: 1rem 0;
   text-align: justify;
+}
+.contact .contact-content .left .icons .row {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+}
+.contact .contact-content .left .icons .row i {
+  font-size: 100px;
+}
+.contact .contact-content .left .icons .row .info {
+  margin-left: 1.5rem;
+}
+.contact .contact-content .left .icons .row .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .right form .fields {
+  display: flex;
+}
+.contact .contact-content .right form .field {
+  height: 45px;
+  width: 100%;
+}
+.contact .contact-content .right form .field input {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

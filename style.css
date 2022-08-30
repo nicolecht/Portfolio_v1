@@ -534,6 +534,9 @@ section .title::after {
 .contact .contact-content .left .icons .row .info .head {
   font-weight: 500;
 }
+.contact .contact-content .left .icons .row .info .sub-title a {
+  color: #000000;
+}
 .contact .contact-content .right .text {
   font-size: 1.5rem;
   font-weight: 500;
@@ -590,4 +593,35 @@ section .title::after {
 .contact .contact-content .right form .button button:hover {
   color: #45A29E;
   background: none;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+  background-color: #1F2833;
+}
+@media screen and (max-width: 959px) {
+  footer {
+    flex-direction: column;
+  }
+}
+footer .footer-content {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 959px) {
+  footer .footer-content {
+    margin: 10px;
+  }
+}
+footer .footer-content span {
+  color: #66FCF1;
+}
+footer .footer-content a {
+  padding: 0 1rem;
+  color: #FFFFFF;
+}
+footer .footer-content a:hover {
+  color: #66FCF1;
 }/*# sourceMappingURL=style.css.map */

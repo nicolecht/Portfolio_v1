@@ -633,6 +633,10 @@ section {
             .head {
               font-weight: 500;
             }
+
+            .sub-title a {
+              color: #000000;
+            }
           }
         }
       }
@@ -699,6 +703,39 @@ section {
           }
         }
       }
+    }
+  }
+}
+
+// Footer styling
+
+footer {
+  display: flex;
+  padding: 1rem;
+  background-color: $c-bg-primary;
+  @include media-query.lt-md {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    width: 100%;
+    text-align: center;
+    color: $c-tx-primary;
+    @include media-query.lt-md {
+      margin: 10px;
+    }
+
+    span {
+      color: $c-tx-third;
+    }
+
+    a {
+      padding: 0 1rem;
+      color: $c-tx-primary;
+    }
+
+    a:hover {
+      color: $c-tx-third;
     }
   }
 }

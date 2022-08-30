@@ -110,7 +110,7 @@ a {
   .navbar .max-width .menu li a {
     display: inline-block;
     margin: 20px 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .navbar .max-width .menu li a:hover {
@@ -185,19 +185,19 @@ a {
 }
 .home .max-width .home-content a {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
   border: 2px solid #45A29E;
   border-radius: 0.5rem;
   background-color: #45A29E;
   color: #FFFFFF;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 0;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 959px) {
   .home .max-width .home-content a {
     padding: 0.8rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 .home .max-width .home-content a:hover {

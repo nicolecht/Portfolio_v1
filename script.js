@@ -24,7 +24,6 @@ $(document).ready(function() {
     // Toggle menu/navbar for mobile
     $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
-        //$('.menu-btn i').toggleClass("active");
     });
 
     // Typing animation script

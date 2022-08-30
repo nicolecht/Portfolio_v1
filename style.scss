@@ -151,7 +151,7 @@ a {
           @include media-query.lt-md {
             display: inline-block;
             margin: 20px 0;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
           }
         }
 
@@ -172,10 +172,6 @@ a {
       @include media-query.lt-md {
         display: block;
         z-index: 999;
-
-        // i.active:before {
-        //  content: "\f00d";
-        // }
       }
     }
   }
@@ -240,10 +236,10 @@ a {
       }
 
       a {
-        @include components.button (1rem 2rem, 1.8rem, 0);
+        @include components.button (0.8rem 1.5rem, 1.5rem, 0);
         @include media-query.lt-md {
           padding: 0.8rem 1.5rem;
-          font-size: 1.5rem;
+          font-size: 1.4rem;
         }
       }
       a:hover {

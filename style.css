@@ -537,8 +537,9 @@ section .title::after {
 .contact .contact-content .right .text {
   font-size: 1.5rem;
   font-weight: 500;
-  background-color: green;
-  margin-bottom: 100px;
+}
+.contact .contact-content .right form {
+  margin-top: 1rem;
 }
 .contact .contact-content .right form .fields {
   display: flex;

@@ -14,6 +14,8 @@
         <script src="https://kit.fontawesome.com/82e5cff435.js" crossorigin="anonymous"></script>
         <!-- JQuery Core 3.x -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Typed.js 2.0.12 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- WayPoint 4.0.1 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- OwlCarousel2 2.3.4 -->
@@ -23,16 +25,19 @@
     </head>
 
     <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
         <nav class="navbar">
             <div class="max-width">
                 <div class="logo"><a href="#">My <span>Portfolio</span></a></div>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="menu" id="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#services" class="menu-btn">Services</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#projects" class="menu-btn">Projects</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
                 </ul>
                 <div class="menu-btn">
                     <i class="fas fa-bars"></i>
@@ -46,7 +51,7 @@
                 <div class="home-content">
                     <div class="text-1">Hello world!</div>
                     <div class="text-2">I'm Nicole</div>
-                    <div class="text-3">and I'm a <span>Developer</span></div>
+                    <div class="text-3">and I'm a <span class="typing"></span></div>
                     <a href="#">Hire me</a>
                 </div>
             </div>
@@ -61,7 +66,7 @@
                         <img src="./img/profilePicture.jpg" alt=profilePicture">
                     </div>
                     <div class="column right">
-                        <div class="text">I'm Nicole and I'm a <span>Developer</span></div>
+                        <div class="text">I'm Nicole and I'm a <span class="typing-2"></span></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatibus iusto facilis, sed fugit natus omnis accusantium at voluptas qui deserunt laborum quidem tempora aut delectus obcaecati itaque tempore! Aspernatur, consequatur quod est nostrum qui porro sit, consectetur veritatis similique neque dolor sequi accusamus magni deserunt totam fugit. Eius quos deserunt repellat. Maxime perspiciatis qui, ullam perferendis explicabo laudantium veritatis.</p>
                         <a href="#">Download CV</a>
                     </div>

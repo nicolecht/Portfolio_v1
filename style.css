@@ -230,9 +230,9 @@ section .title::before {
 section .title::after {
   content: "who i am";
   position: absolute;
-  bottom: -12px;
+  bottom: -9px;
   left: 50%;
-  padding: 5px;
+  padding: 2px 5px;
   color: #45A29E;
   background-color: #FFFFFF;
   font-size: 1rem;
@@ -368,7 +368,7 @@ section .title::after {
 }
 
 .skills .title::after {
-  content: "as for now 😉";
+  content: "as for now 🤓";
 }
 .skills .subtitle {
   margin: -2rem auto 3rem auto;
@@ -444,9 +444,17 @@ section .title::after {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  background-image: url("img/Photo1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.projects .carousel .card .box img {
+  height: 200px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  border: 5px solid #66FCF1;
+  transition: border-color 0.3s ease;
 }
 .projects .carousel .card .box .text {
   font-size: 1.2rem;

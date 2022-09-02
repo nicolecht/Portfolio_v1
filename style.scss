@@ -277,9 +277,9 @@ section {
   .title::after {
     content: "who i am";
     position: absolute;
-    bottom: -12px;
+    bottom: -9px;
     left: 50%;
-    padding: 5px;
+    padding: 2px 5px;
     color: $c-bg-third;
     background-color: $c-tx-primary;
     font-size: 1rem;
@@ -427,7 +427,7 @@ section {
 
 .skills {
 	.title::after {
-	  content: "as for now 😉";
+	  content: "as for now 🤓";
 	}
 
   .subtitle {
@@ -517,18 +517,17 @@ section {
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease;
-        background-image: url("img/Photo1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
-        // img {
-        //   height: 100px;
-        //   width: 100px;
-        //   object-fit: cover;
-        //   border-radius: 50%;
-        //   border: 5px solid $c-tx-third;
-        //   transition: border-color 0.3s ease;
-        // }
+        img {
+          height: 200px;
+          width: 400px;
+          object-fit: cover;
+          border-radius: 6px;
+          border: 5px solid $c-tx-third;
+          transition: border-color 0.3s ease;
+        }
 
         .text {
           font-size: 1.2rem;

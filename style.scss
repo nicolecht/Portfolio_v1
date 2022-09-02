@@ -288,7 +288,6 @@ section {
 }
 
 .about-content,
-.skills-content,
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -397,10 +396,10 @@ section {
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
-	  @include media-query.lt-md {
-		width: 100%;
-		margin: 0 auto 20px auto;
-	  }
+	    @include media-query.lt-md {
+		  width: 100%;
+		  margin: 0 auto 20px auto;
+	    }
 
       .box {
         .text {
@@ -428,97 +427,60 @@ section {
 
 .skills {
 	.title::after {
-	  content: "Languages & Tools";
+	  content: "as for now 😉";
 	}
 
+  .subtitle {
+    margin: -2rem auto 3rem auto;
+    text-align: center;
+  }
+
+  // need to refactor - similar to services section //
   .skills-content {
-    .column {
-      width: calc(50% - 40px);
-      @include media-query.lt-md {
-        width: 100%;
+    display: flex;
+    justify-content: space-between;
+	  @include media-query.lt-md {
+	  	flex-direction: column;
+	  }
+
+    .card {
+      width: calc(33% - 20px);
+      padding: 2rem 1rem;
+      border: solid 5px lighten($c-bg-third, 50%);
+      border-radius: 6px;
+      text-align: center;
+      transition: all 0.3s ease;
+	    @include media-query.lt-md {
+		  width: 100%;
+		  margin: 0 auto 20px auto;
+	    }
+
+      .box {
+        .text {
+          margin: 10px 0 20px 0;
+          color: $c-bg-third;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
       }
     }
 
-    .left {
-      @include media-query.lt-md {
-        margin-bottom: 2rem;
-      }
-
-      .text {
-        color: $c-bg-third;
-        font-size: 1.2rem;
-        font-weight: 500;
-      }
-
-      p {
-        margin: 10px 0;
-        text-align: justify;
-      }
-
-      // a {
-      //   @include components.button (0.5rem 1rem, 1rem, 500);
-      //   @include media-query.lt-md {
-      //     padding: 0.5rem 1rem;
-      //     font-size: 1rem;
-      //   }
-      // }
-      
-      // a:hover {
-      //   background: none;
-      //   color: $c-bg-third;
-      // }
+    .card:hover {
+      transform: scale(1.05);
     }
+  }
+  
+  .all-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    .right {
-      .bars {
-        margin-bottom: 1rem;
+    .skills-icons {
+      margin: 1rem;
+      text-align: center;
 
-        .info {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 5px;
-          align-items: center;
-
-          span {
-            font-weight: 500;
-          }
-        }
-
-        .line {
-          position: relative;
-          height: 5px;
-          width: 100%;
-          background-color: $c-tx-secondary;
-        }
-
-        .line::before {
-          content: "";
-          position: absolute;
-          height: 100%;
-          top: 0;
-          left: 0;
-          background-color: $c-bg-third;
-        }
-
-        .html::before {
-          width:70%;
-        }
-
-        .css::before {
-          width:60%;
-        }
-
-        .react::before {
-          width:10%;
-        }
-
-        .js::before {
-          width:50%;
-        }
-
-        .c::before {
-          width:60%;
-        }
+      img {
+      height: 50px;
       }
     }
   }

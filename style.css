@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import Google Fonts:
 font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif;
@@ -239,7 +240,6 @@ section .title::after {
 }
 
 .about-content,
-.skills-content,
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -368,70 +368,55 @@ section .title::after {
 }
 
 .skills .title::after {
-  content: "Languages & Tools";
+  content: "as for now 😉";
 }
-.skills .skills-content .column {
-  width: calc(50% - 40px);
+.skills .subtitle {
+  margin: -2rem auto 3rem auto;
+  text-align: center;
+}
+.skills .skills-content {
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 959px) {
-  .skills .skills-content .column {
+  .skills .skills-content {
+    flex-direction: column;
+  }
+}
+.skills .skills-content .card {
+  width: calc(33% - 20px);
+  padding: 2rem 1rem;
+  border: solid 5px #eef8f7;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 959px) {
+  .skills .skills-content .card {
     width: 100%;
+    margin: 0 auto 20px auto;
   }
 }
-@media screen and (max-width: 959px) {
-  .skills .skills-content .left {
-    margin-bottom: 2rem;
-  }
-}
-.skills .skills-content .left .text {
+.skills .skills-content .card .box .text {
+  margin: 10px 0 20px 0;
   color: #45A29E;
   font-size: 1.2rem;
   font-weight: 500;
 }
-.skills .skills-content .left p {
-  margin: 10px 0;
-  text-align: justify;
+.skills .skills-content .card:hover {
+  transform: scale(1.05);
 }
-.skills .skills-content .right .bars {
-  margin-bottom: 1rem;
-}
-.skills .skills-content .right .bars .info {
+.skills .all-skills {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.skills .skills-content .right .bars .info span {
-  font-weight: 500;
+.skills .all-skills .skills-icons {
+  margin: 1rem;
+  text-align: center;
 }
-.skills .skills-content .right .bars .line {
-  position: relative;
-  height: 5px;
-  width: 100%;
-  background-color: #C5C6C7;
-}
-.skills .skills-content .right .bars .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #45A29E;
-}
-.skills .skills-content .right .bars .html::before {
-  width: 70%;
-}
-.skills .skills-content .right .bars .css::before {
-  width: 60%;
-}
-.skills .skills-content .right .bars .react::before {
-  width: 10%;
-}
-.skills .skills-content .right .bars .js::before {
-  width: 50%;
-}
-.skills .skills-content .right .bars .c::before {
-  width: 60%;
+.skills .all-skills .skills-icons img {
+  height: 50px;
 }
 
 .projects {

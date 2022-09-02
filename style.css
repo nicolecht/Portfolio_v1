@@ -392,27 +392,6 @@ section .title::after {
   margin: 10px 0;
   text-align: justify;
 }
-.skills .skills-content .left a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 2px solid #45A29E;
-  border-radius: 0.5rem;
-  background-color: #45A29E;
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-@media screen and (max-width: 959px) {
-  .skills .skills-content .left a {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-}
-.skills .skills-content .left a:hover {
-  background: none;
-  color: #45A29E;
-}
 .skills .skills-content .right .bars {
   margin-bottom: 1rem;
 }
@@ -480,20 +459,17 @@ section .title::after {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-}
-.projects .carousel .card .box img {
-  height: 100px;
-  width: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #66FCF1;
-  transition: border-color 0.3s ease;
+  background-image: url("img/Photo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .projects .carousel .card .box .text {
   font-size: 1.2rem;
   font-weight: 500;
   margin: 10px 0;
+}
+.projects .carousel .card .box p {
+  margin: 8px 0;
 }
 .projects .carousel .card:hover {
   background-color: #45a29e;

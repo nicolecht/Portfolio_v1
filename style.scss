@@ -455,18 +455,18 @@ section {
         text-align: justify;
       }
 
-      a {
-        @include components.button (0.5rem 1rem, 1rem, 500);
-        @include media-query.lt-md {
-          padding: 0.5rem 1rem;
-          font-size: 1rem;
-        }
-      }
+      // a {
+      //   @include components.button (0.5rem 1rem, 1rem, 500);
+      //   @include media-query.lt-md {
+      //     padding: 0.5rem 1rem;
+      //     font-size: 1rem;
+      //   }
+      // }
       
-      a:hover {
-        background: none;
-        color: $c-bg-third;
-      }
+      // a:hover {
+      //   background: none;
+      //   color: $c-bg-third;
+      // }
     }
 
     .right {
@@ -524,7 +524,7 @@ section {
   }
 }
 
-// Teams section styling
+// Projects section styling
 
 .projects {
   color: $c-tx-primary;
@@ -555,20 +555,27 @@ section {
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease;
+        background-image: url("img/Photo1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
-        img {
-          height: 100px;
-          width: 100px;
-          object-fit: cover;
-          border-radius: 50%;
-          border: 5px solid $c-tx-third;
-          transition: border-color 0.3s ease;
-        }
+        // img {
+        //   height: 100px;
+        //   width: 100px;
+        //   object-fit: cover;
+        //   border-radius: 50%;
+        //   border: 5px solid $c-tx-third;
+        //   transition: border-color 0.3s ease;
+        // }
 
         .text {
           font-size: 1.2rem;
           font-weight: 500;
           margin: 10px 0;
+        }
+
+        p {
+          margin: 8px 0;
         }
       }
     }

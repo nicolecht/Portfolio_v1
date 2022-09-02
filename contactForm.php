@@ -10,9 +10,7 @@ if (isset($_POST['submit'])) {
     $headers = "From: ".$mailFrom;
     $txt = "You have received an email from ".$name.".\n\n".$message;
 
-    mail($mailTo, $subject, $txt, $headers) or die ("Error!");
+    mail($mailTo, $subject, $txt, $headers);
     header("Location: index.html#contact");
-    echo "Message Sent"
-}
 
 ?>

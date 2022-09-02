@@ -68,7 +68,7 @@
                     <div class="column right">
                         <div class="text">I'm Nicole and I'm a <span class="typing-2"></span></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatibus iusto facilis, sed fugit natus omnis accusantium at voluptas qui deserunt laborum quidem tempora aut delectus obcaecati itaque tempore! Aspernatur, consequatur quod est nostrum qui porro sit, consectetur veritatis similique neque dolor sequi accusamus magni deserunt totam fugit. Eius quos deserunt repellat. Maxime perspiciatis qui, ullam perferendis explicabo laudantium veritatis.</p>
-                        <a href="#">Download CV</a>
+                        <a href="./attachments/CVNicoleChee.pdf">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@
 			</div>
 		 </section>
 
-		 <!-- Teams section -->
+		 <!-- Projects section -->
          <section class="projects" id="projects">
             <div class="max-width">
                 <h2 class="title">My Projects</h2>
@@ -226,23 +226,23 @@
                     </div>
                     <div class="column right">
                         <class class="text">Message me</class>
-                        <form action="#">
+                        <form action="contactForm.php" method="post">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required>
+                                    <input type="text" name="name" placeholder="Name" required>
                                 </div>
                                 <div class="field email">
-                                    <input type="text" placeholder="Email" required>
+                                    <input type="text" name="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" name="subject" placeholder="Subject" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                                <textarea cols="30" rows="10" name="message" placeholder="Message" required></textarea>
                             </div>
                             <div class="button">
-                                <button type="submit">Submit</button>
+                                <button type="submit" name="submit">Submit</button>
                             </div>
                         </form>
                     </div>

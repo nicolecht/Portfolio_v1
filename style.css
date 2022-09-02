@@ -262,7 +262,7 @@ section .title::after {
   .about .about-content .left {
     display: flex;
     justify-content: center;
-    margin: 0 auto 60px;
+    margin: 0 auto 4rem;
   }
 }
 .about .about-content .left img {
@@ -271,7 +271,7 @@ section .title::after {
 }
 @media screen and (max-width: 959px) {
   .about .about-content .left img {
-    height: 350px;
+    height: 300px;
   }
 }
 .about .about-content .right {

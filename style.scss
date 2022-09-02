@@ -315,7 +315,7 @@ section {
       @include media-query.lt-md {
         display: flex;
         justify-content: center;
-        margin: 0 auto 60px;
+        margin: 0 auto 4rem;
       }
 
       img {
@@ -324,7 +324,7 @@ section {
         //object-fit: cover;
         border-radius: 6px;
         @include media-query.lt-md {
-          height: 350px;
+          height: 300px;
         }
       }
     }

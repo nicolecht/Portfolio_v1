@@ -536,7 +536,7 @@ section {
 
         img {
           height: 200px;
-          width: 400px;
+          max-width: 400px;
           object-fit: cover;
           border-radius: 6px;
           //border: 5px solid $c-bg-primary;

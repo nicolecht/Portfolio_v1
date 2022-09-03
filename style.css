@@ -179,10 +179,15 @@ a {
   font-weight: 500;
   font-size: 3rem;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 599px) {
   .home .max-width .home-content .text-3 span {
+    display: block;
     font-size: 2.5rem;
   }
+}
+.home .max-width .home-content .text-3 span::after {
+  content: ".";
+  opacity: 0%;
 }
 .home .max-width .home-content a {
   display: inline-block;
@@ -289,6 +294,15 @@ section .title::after {
 .about .about-content .right .text span {
   font-size: 1em;
   color: #45A29E;
+}
+@media screen and (max-width: 599px) {
+  .about .about-content .right .text span {
+    display: block;
+  }
+}
+.about .about-content .right .text span::after {
+  content: ".";
+  opacity: 0%;
 }
 .about .about-content .right p {
   margin: 1rem 0;

@@ -229,9 +229,15 @@ a {
           color: $c-tx-third;
           font-weight: 500;
           font-size: 3rem;
-          @include media-query.lt-md {
+          @include media-query.lt-sm {
+            display: block;
             font-size: 2.5rem;
           }
+        }
+
+        span::after{
+          content: ".";
+          opacity: 0%;
         }
       }
 
@@ -341,6 +347,14 @@ section {
         span {
           font-size: 1em;
           color: $c-bg-third;
+          @include media-query.lt-sm {
+            display: block;
+          }
+        }
+
+        span::after{
+          content: ".";
+          opacity: 0%;
         }
       }
 

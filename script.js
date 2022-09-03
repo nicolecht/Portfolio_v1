@@ -31,14 +31,16 @@ $(document).ready(function() {
         strings: ["developer", "42KL cadet", "puzzle-addict"],
         typeSpeed: 60,
         backSpeed: 30,
-        loop: true
+        loop: true,
+        showCursor: false
     });
 
     var typed = new Typed(".typing-2", {
         strings: ["developer", "42KL cadet", "puzzle-addict"],
         typeSpeed: 60,
         backSpeed: 30,
-        loop: true
+        loop: true,
+        showCursor: false
     });
 
     // Owl Carousel

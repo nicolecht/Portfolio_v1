@@ -441,7 +441,7 @@ section {
 
 .skills {
 	.title::after {
-	  content: "as for now 🤓";
+	  content: "as for now 😉";
 	}
 
   .subtitle {
@@ -511,7 +511,7 @@ section {
   }
 
 	.title::after {
-	  content: "what I've built";
+	  content: "what I've coded";
     color: $c-tx-third;
     background-color: $c-bg-primary;
 	}
@@ -539,18 +539,35 @@ section {
           width: 400px;
           object-fit: cover;
           border-radius: 6px;
-          border: 5px solid $c-tx-third;
-          transition: border-color 0.3s ease;
+          //border: 5px solid $c-bg-primary;
+          filter: grayscale(100%);
+          transition: filter 0.3s ease;
         }
 
         .text {
+          margin: 10px 0;
+          color: $c-tx-third;
           font-size: 1.2rem;
           font-weight: 500;
-          margin: 10px 0;
         }
 
         p {
           margin: 8px 0;
+        }
+
+        .text-icons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 1rem 0 0;
+          
+          span {
+            padding: 3px 8px;
+            margin: 3px;
+            border: 2px solid $c-bg-third;
+            border-radius: 6px;
+            background-color: $c-bg-third;
+          }
         }
       }
     }
@@ -560,10 +577,20 @@ section {
 
       .box {
         transform: scale(1.05);
-      }
 
-      img {
-        border-color: $c-tx-primary;
+        .text {
+          color: $c-tx-primary;
+        }
+
+        img {
+          filter: none;
+        }
+  
+        .text-icons {
+          span {
+            border-color: $c-tx-primary;
+          }
+        }
       }
     }
   }

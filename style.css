@@ -382,7 +382,7 @@ section .title::after {
 }
 
 .skills .title::after {
-  content: "as for now 🤓";
+  content: "as for now 😉";
 }
 .skills .subtitle {
   margin: -2rem auto 3rem auto;
@@ -441,7 +441,7 @@ section .title::after {
   background-color: #FFFFFF;
 }
 .projects .title::after {
-  content: "what I've built";
+  content: "what I've coded";
   color: #66FCF1;
   background-color: #1F2833;
 }
@@ -467,16 +467,30 @@ section .title::after {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
-  border: 5px solid #66FCF1;
-  transition: border-color 0.3s ease;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 .projects .carousel .card .box .text {
+  margin: 10px 0;
+  color: #66FCF1;
   font-size: 1.2rem;
   font-weight: 500;
-  margin: 10px 0;
 }
 .projects .carousel .card .box p {
   margin: 8px 0;
+}
+.projects .carousel .card .box .text-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0 0;
+}
+.projects .carousel .card .box .text-icons span {
+  padding: 3px 8px;
+  margin: 3px;
+  border: 2px solid #45A29E;
+  border-radius: 6px;
+  background-color: #45A29E;
 }
 .projects .carousel .card:hover {
   background-color: #45a29e;
@@ -484,7 +498,13 @@ section .title::after {
 .projects .carousel .card:hover .box {
   transform: scale(1.05);
 }
-.projects .carousel .card:hover img {
+.projects .carousel .card:hover .box .text {
+  color: #FFFFFF;
+}
+.projects .carousel .card:hover .box img {
+  filter: none;
+}
+.projects .carousel .card:hover .box .text-icons span {
   border-color: #FFFFFF;
 }
 .projects .owl-carousel .owl-dots {

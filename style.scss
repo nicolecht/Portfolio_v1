@@ -573,16 +573,8 @@ section {
       }
     }
 
-    .card:hover,
     .owl-item.active {
       border-radius: 10px;
-      @include media-query.gt-md {
-        background-color: $c-bg-third;
-
-        .text {
-          color: $c-tx-primary;
-        }
-      }
 
       .box {
         transform: scale(1.05);
@@ -593,9 +585,17 @@ section {
       }
     }
 
-    .card:hover {
-      .text-icons span {
-        border-color: $c-tx-primary;
+    @include media-query.gt-md {
+      .card:hover {
+        background-color: $c-bg-third;
+
+        .text {
+          color: $c-tx-primary;
+        }
+
+        .text-icons span {
+          border-color: $c-tx-primary;
+        }
       }
     }
   }

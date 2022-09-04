@@ -493,30 +493,25 @@ section .title::after {
   background-color: #45A29E;
   transition: border-color 0.3s ease;
 }
-.projects .carousel .card:hover,
 .projects .carousel .owl-item.active {
   border-radius: 10px;
 }
-@media screen and (min-width: 1280px) {
-  .projects .carousel .card:hover,
-.projects .carousel .owl-item.active {
-    background-color: #45A29E;
-  }
-  .projects .carousel .card:hover .text,
-.projects .carousel .owl-item.active .text {
-    color: #FFFFFF;
-  }
-}
-.projects .carousel .card:hover .box,
 .projects .carousel .owl-item.active .box {
   transform: scale(1.05);
 }
-.projects .carousel .card:hover .box img,
 .projects .carousel .owl-item.active .box img {
   filter: none;
 }
-.projects .carousel .card:hover .text-icons span {
-  border-color: #FFFFFF;
+@media screen and (min-width: 1280px) {
+  .projects .carousel .card:hover {
+    background-color: #45A29E;
+  }
+  .projects .carousel .card:hover .text {
+    color: #FFFFFF;
+  }
+  .projects .carousel .card:hover .text-icons span {
+    border-color: #FFFFFF;
+  }
 }
 .projects .owl-carousel .owl-dots {
   text-align: center;

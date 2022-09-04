@@ -73,7 +73,7 @@ $(function() {
     $('form').validate();
 
     $('form').on('submit', function(e) {
-        e.preventDefault();
+        //e.preventDefault();
 
         let dataString = $(this).serialize();
 
@@ -82,7 +82,7 @@ $(function() {
             url: 'contactForm.php',
             data: dataString,
             success: function() {
-                $('#contact').html('<div id="message"></div>');
+                $('.contact .column .right').html('<div id="message"></div>');
 
                 $('.message')
                     .html('<h2>Contact Form Submitted!</h2>')

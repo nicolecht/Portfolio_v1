@@ -81,14 +81,14 @@ $(function() {
             type: 'POST',
             url: 'contactForm.php',
             data: dataString
-            // success: function() {
-            //     $('#contact').html('<div id="message"></div>');
+            success: function() {
+                $('#contact').html('<div id="message"></div>');
 
-            //     $('#message')
-            //         .html('<h2>Contact Form Submitted!</h2>')
-            //         .append('<p>We will be in touch</p>')
-            //         .hide()
-            //         .fadeIn(1500);
+                $('#message')
+                    .html('<h2>Contact Form Submitted!</h2>')
+                    .append('<p>We will be in touch</p>')
+                    .hide()
+                    .fadeIn(1500);
             }
         });
     });

@@ -68,3 +68,28 @@ $(document).ready(function() {
         }
     });
 });
+
+$(function() {
+    $('form').validate();
+
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        let dataString = $(this).serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: 'contactForm.php',
+            data: dataString,
+            success: function() {
+                $('.contact .column .right').html('<div id="message"></div>');
+
+                $('.message')
+                    .html('<h2>Contact Form Submitted!</h2>')
+                    .append('<p>We will be in touch</p>')
+                    .hide()
+                    .fadeIn(1500);
+            }
+        });
+    });
+});

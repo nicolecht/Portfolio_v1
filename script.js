@@ -80,7 +80,7 @@ $(function() {
         $.ajax({
             type: 'POST',
             url: 'contactForm.php',
-            data: dataString
+            data: dataString,
             success: function() {
                 $('#contact').html('<div id="message"></div>');
 

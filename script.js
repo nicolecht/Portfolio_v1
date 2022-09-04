@@ -84,7 +84,7 @@ $(function() {
             success: function() {
                 $('#contact').html('<div id="message"></div>');
 
-                $('#message')
+                $('.message')
                     .html('<h2>Contact Form Submitted!</h2>')
                     .append('<p>We will be in touch</p>')
                     .hide()

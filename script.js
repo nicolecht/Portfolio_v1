@@ -82,9 +82,9 @@ $(function() {
             url: 'contactForm.php',
             data: dataString,
             success: function() {
-                $('.contact .column .right').html('<div id="message"></div>');
+                $('#contact').html('<div id="message"></div>');
 
-                $('.message')
+                $('#message')
                     .html('<h2>Contact Form Submitted!</h2>')
                     .append('<p>We will be in touch</p>')
                     .hide()

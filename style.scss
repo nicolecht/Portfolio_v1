@@ -574,24 +574,24 @@ section {
 
     .card:hover,
     .owl-item.active {
-      background-color: darken($c-bg-third, 0%);
       border-radius: 10px;
-
-      .box {
-        transform: scale(1.05);
+      @include media-query.gt-md {
+        background-color: $c-bg-third;
 
         .text {
           color: $c-tx-primary;
         }
 
+        .text-icons span {
+          border-color: $c-tx-primary;
+        }
+      }
+
+      .box {
+        transform: scale(1.05);
+
         img {
           filter: none;
-        }
-  
-        .text-icons {
-          span {
-            border-color: $c-tx-primary;
-          }
         }
       }
     }

@@ -73,7 +73,7 @@ $(function() {
     $('form').validate();
 
     $('form').on('submit', function(e) {
-        //e.preventDefault();
+        e.preventDefault();
 
         let dataString = $(this).serialize();
 

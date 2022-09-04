@@ -492,19 +492,25 @@ section .title::after {
   border-radius: 6px;
   background-color: #45A29E;
 }
-.projects .carousel .card:hover {
+.projects .carousel .card:hover,
+.projects .carousel .owl-item.active {
   background-color: #45a29e;
+  border-radius: 10px;
 }
-.projects .carousel .card:hover .box {
+.projects .carousel .card:hover .box,
+.projects .carousel .owl-item.active .box {
   transform: scale(1.05);
 }
-.projects .carousel .card:hover .box .text {
+.projects .carousel .card:hover .box .text,
+.projects .carousel .owl-item.active .box .text {
   color: #FFFFFF;
 }
-.projects .carousel .card:hover .box img {
+.projects .carousel .card:hover .box img,
+.projects .carousel .owl-item.active .box img {
   filter: none;
 }
-.projects .carousel .card:hover .box .text-icons span {
+.projects .carousel .card:hover .box .text-icons span,
+.projects .carousel .owl-item.active .box .text-icons span {
   border-color: #FFFFFF;
 }
 .projects .owl-carousel .owl-dots {

@@ -73,7 +73,7 @@ $(function() {
     $('form').validate();
 
     $('form').on('submit', function(e) {
-        //e.preventDefault(); //if active, form does not work
+        e.preventDefault(); //if active, form does not work
 
         let dataString = $(this).serialize();
 

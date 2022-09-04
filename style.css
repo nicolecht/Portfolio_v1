@@ -488,9 +488,10 @@ section .title::after {
 .projects .carousel .card .box .text-icons span {
   padding: 3px 8px;
   margin: 3px;
-  border: 2px solid #45A29E;
+  border: 1px solid #0B0C10;
   border-radius: 6px;
   background-color: #45A29E;
+  transition: border-color 0.3s ease;
 }
 .projects .carousel .card:hover,
 .projects .carousel .owl-item.active {
@@ -505,10 +506,6 @@ section .title::after {
 .projects .carousel .owl-item.active .text {
     color: #FFFFFF;
   }
-  .projects .carousel .card:hover .text-icons span,
-.projects .carousel .owl-item.active .text-icons span {
-    border-color: #FFFFFF;
-  }
 }
 .projects .carousel .card:hover .box,
 .projects .carousel .owl-item.active .box {
@@ -517,6 +514,9 @@ section .title::after {
 .projects .carousel .card:hover .box img,
 .projects .carousel .owl-item.active .box img {
   filter: none;
+}
+.projects .carousel .card:hover .text-icons span {
+  border-color: #FFFFFF;
 }
 .projects .owl-carousel .owl-dots {
   text-align: center;

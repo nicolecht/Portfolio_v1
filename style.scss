@@ -564,9 +564,10 @@ section {
           span {
             padding: 3px 8px;
             margin: 3px;
-            border: 2px solid $c-bg-third;
+            border: 1px solid $c-bg-secondary;
             border-radius: 6px;
             background-color: $c-bg-third;
+            transition: border-color 0.3s ease;
           }
         }
       }
@@ -581,10 +582,6 @@ section {
         .text {
           color: $c-tx-primary;
         }
-
-        .text-icons span {
-          border-color: $c-tx-primary;
-        }
       }
 
       .box {
@@ -593,6 +590,12 @@ section {
         img {
           filter: none;
         }
+      }
+    }
+
+    .card:hover {
+      .text-icons span {
+        border-color: $c-tx-primary;
       }
     }
   }

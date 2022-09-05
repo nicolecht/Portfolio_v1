@@ -13,9 +13,11 @@ if (isset($_POST['submit'])) {
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.html#contact");
 
-    echo '<script type="text/javascript">';
-    echo ' alert("JavaScript Alert Box by PHP")';  //not showing an alert box.
-    echo '</script>';
+    // echo '<script type="text/javascript">';
+    // echo ' alert("JavaScript Alert Box by PHP")';  //not showing an alert box.
+    // echo '</script>';
+
+    echo "Message Sent";
 }
 
 ?>

@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     // Typing animation script
     var typed = new Typed(".typing", {
-        strings: ["software developer", "42KL cadet", "puzzle-addict"],
+        strings: ["developer", "42KL cadet", "puzzle-addict"],
         typeSpeed: 60,
         backSpeed: 30,
         loop: true,
@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["software developer", "42KL cadet", "puzzle-addict"],
+        strings: ["developer", "42KL cadet", "puzzle-addict"],
         typeSpeed: 60,
         backSpeed: 30,
         loop: true,

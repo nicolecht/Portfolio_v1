@@ -1,0 +1,139 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #3c87ff;
+}
+
+.wrapper {
+  max-width: 50%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.task-input {
+  height: 6rem;
+  padding: 1.5rem;
+  position: relative;
+}
+.task-input img {
+  position: absolute;
+  top: 50%;
+  width: 1.5rem;
+  height: auto;
+  transform: translate(16px, -50%);
+}
+.task-input input {
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem 0 3rem;
+  border: 0.1rem solid #999;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.task-input input::-moz-placeholder {
+  color: #999999;
+}
+.task-input input:-ms-input-placeholder {
+  color: #999999;
+}
+.task-input input::placeholder {
+  color: #999999;
+}
+
+.controls, li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+  padding: 0 1.5rem 1.5rem;
+  border-bottom: 1px solid #999;
+}
+.controls .filters span {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.controls .filters span:first-child {
+  margin-left: 0;
+}
+.controls .filters span.active {
+  color: #3c87ff;
+}
+.controls .clear-btn {
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #3c87ff;
+  cursor: pointer;
+}
+
+.taskbox {
+  margin: 1.5rem 1.5rem;
+  padding: 0 0 1.5rem 0;
+}
+.taskbox .task {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #999;
+  list-style: none;
+}
+.taskbox .task label {
+  display: flex;
+}
+.taskbox .task label input {
+  margin: 0 0.5rem 0 0;
+}
+.taskbox .task label p.checked {
+  text-decoration: line-through;
+}
+.taskbox .task .settings {
+  position: relative;
+  cursor: pointer;
+}
+.taskbox .task .settings .task-menu {
+  position: absolute;
+  z-index: 2;
+  right: -0.5rem;
+  bottom: -3rem;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.2rem #999;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.2s ease;
+}
+.taskbox .task .settings .task-menu li {
+  justify-content: flex-start;
+  height: 1.5rem;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem;
+}
+.taskbox .task .settings .task-menu li i {
+  padding-right: 0.5rem;
+}
+.taskbox .task .settings .task-menu li:hover {
+  background-color: #f7f7f7;
+}
+.taskbox .task .settings .task-menu li:last-child {
+  margin-bottom: 0;
+}
+.taskbox .task .settings .task-menu.show {
+  transform: scale(1);
+}
+.taskbox .task:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}/*# sourceMappingURL=toDoListStyle.css.map */

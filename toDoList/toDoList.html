@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="toDoListStyle.css">
+        <title>To Do List</title>
+        <!-- Iconscout Link for Icons -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="task-input">
+                <img src="./toDoListIcons/align-left.svg" alt="icon">
+                <input type="text" placeholder="Add a new task">
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <span id="all" class="active">All</span>
+                    <span id="pending">Pending</span>
+                    <span id="completed">Completed</span>
+                </div>
+                <button class="clear-btn">Clear All</button>
+            </div>
+            <ul class="taskbox">
+<!--            <li class="task"> (script.js\showTodo)
+                    <label for="1">
+                        <input type="checkbox" name="" id="1">
+                        <p>Task 1</p>
+                    </label>
+                    <div class="settings">
+                        <i class="uil-ellipsis-h"></i>
+                        <ul class="task-menu">
+                            <li><i class="uil-pen"></i>Edit</li>
+                            <li><i class="uil-trash"></i>Delete</li>
+                        </ul>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+
+        <script src="toDoListScript.js"></script>
+
+    </body>
+
+</html>

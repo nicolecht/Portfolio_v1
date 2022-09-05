@@ -16,8 +16,6 @@ if (isset($_POST['submit'])) {
     // echo '<script type="text/javascript">';
     // echo ' alert("JavaScript Alert Box by PHP")';  //not showing an alert box.
     // echo '</script>';
-
-    echo "Message Sent";
 }
 
 ?>

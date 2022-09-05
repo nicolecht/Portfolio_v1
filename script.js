@@ -93,3 +93,7 @@ $(document).ready(function() {
 //         });
 //     });
 // });
+
+function submitted() {
+    alert("Message submitted!");
+};

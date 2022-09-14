@@ -1,7 +1,7 @@
 # Portfolio_v1
 http://www.nicolecht.com/
 
-Below are my ongoing fixes and improvement made:
+Below are my ongoing fixes and improvements made:
 
 14 Sep 2022
 - fixed sass partial files to include an underscore(_components.scss)

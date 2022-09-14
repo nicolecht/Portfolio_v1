@@ -5,7 +5,7 @@ Below are my ongoing fixes and improvements made:
 
 14 Sep 2022
 - fixed sass partial files to include an underscore(_components.scss)
-- this avoids transpiling them twice, producing css files for my sass partials modules.
+- this avoids transpiling them twice, producing extra css files for my sass partials modules.
 - By default, Sass transpiles all the .scss files directly.
 - However, when you want to import a file, you do not need the file to be transpiled directly.
 - Sass has a mechanism for this:
